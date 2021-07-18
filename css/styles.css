@@ -2,7 +2,7 @@ body {
     align-items: center;
     background-color:#16a085 ;
     display: flex;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     justify-content: center;
     min-height: 500px;
     margin: 0px;
@@ -12,4 +12,13 @@ body {
     background-color: beige;
     border-radius: 2px;
     box-shadow: 0,5px,8px rgba(red, green, blue, alpha);
+}
+.header {
+    background-color: white;
+    margin-top: 70px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    margin-left: 70px;
+    border-bottom: 3px rgb(85, 94, 104);
+    padding: 100px,200px;
 }
