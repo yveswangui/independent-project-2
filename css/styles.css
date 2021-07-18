@@ -17,7 +17,7 @@ body {
     background-color: white;
     margin-top: 70px;
     margin-right: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     margin-left: 70px;
     border-bottom: 3px rgb(85, 94, 104);
     padding: 0px,20px,20px,20px;
@@ -31,4 +31,16 @@ body {
 .form-control {
     margin-bottom: 20px;
     padding-bottom: 20px;
+}
+.form-control input {
+    border: 10px, 10px dodgerblue;
+    border-radius: 5px;
+    font-size: 18px;
+    
+}
+.form-control label {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    margin-bottom: 20px;
 }
