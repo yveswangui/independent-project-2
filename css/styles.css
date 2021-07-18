@@ -10,7 +10,7 @@ body {
 }
 .container {
     background-color: beige;
-    border-radius: 2px;
+    border-radius: 8px;
     box-shadow: 0,5px,8px rgba(red, green, blue, alpha);
 }
 .header {
@@ -20,5 +20,15 @@ body {
     margin-bottom: 70px;
     margin-left: 70px;
     border-bottom: 3px rgb(85, 94, 104);
-    padding: 100px,200px;
+    padding: 0px,20px,20px,20px;
+}
+.form {
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+.form-control {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
