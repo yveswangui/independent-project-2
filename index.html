@@ -5,20 +5,25 @@
         <link rel="stylesheet" href="css/styles.css" type="text/css">
     </head>
     <body>
-        <form>
-            <div class="input">
-                <h4>Select your Date of Birth:</h4>
-                <input type="number" placeholder="DD" class="dob">
-                <input type="number" placeholder="MM" class="dob">
-                <input type="number" placeholder="YYYY" class="dob">
+        <div class="container">
+            <div class="header">
+                <h4>Your Ghanian Name according to your Day of Birth</h4>
             </div>
-    
-            <h5>Choose your gender:</h5>
-            Male: <input type="radio" name="gender" value="Male">
-            Female:<input type="radio" name="gender" value="Female"><br>
-            <input type="submit" value="Submit">
-
-        </form>
+            <form class="form" id="form">
+                <div class="form-control">
+                    <label>Date</label>
+                    <input type="number" placeholder="DD" id="date">
+                </div>
+                <div class="form-control">
+                    <label>Month</label>
+                    <input type="number" placeholder="MM" id="month">
+                </div>
+                <div class="form-control">
+                    <label>Year</label>
+                    <input type="number" placeholder="YYYY" id="year">
+                </div>
+            </form>
+        </div>
         <script src="js/index.js"></script>
     </body>
 </html>
