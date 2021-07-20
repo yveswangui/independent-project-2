@@ -53,6 +53,7 @@ form.addEventListener("submit", function (e) {
     var userYear = document.getElementById("year").value
     var woman = document.getElementById("female")
     e.preventDefault()
+
     if (DD <= 0 || DD > 31) {
         alertDate()
         return
@@ -65,6 +66,7 @@ form.addEventListener("submit", function (e) {
     } else {
         //console.log(woman.checked)
     }
+
     var newYear = userYear.toString()
 
     // console.log(newYear)
@@ -73,8 +75,16 @@ form.addEventListener("submit", function (e) {
     var firstThird = newYear[2]
     var firstFourth = newYear[3]
 
+
     var CC = firstDigit + firstSecond
     var YY = firstThird + firstFourth
+    
+    if (newYear < 1945 || newYear > 2021){
+        alertYear()
+        return
+    } else {
+        //console.log(woman.checked)
+    }
 
 
     if (woman.checked == true) {
@@ -90,4 +100,7 @@ form.addEventListener("submit", function (e) {
 })
 function alertMonth() {
     alert("Month is invalid")
+}
+function alertYear() {
+    alert("Year is invalid")
 }
