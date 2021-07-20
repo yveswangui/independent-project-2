@@ -34,7 +34,12 @@ form.addEventListener("submit", function (e) {
     var CC = firstDigit + firstSecond
     var YY = firstThird + firstFourth
 
-
+    if (newYear < 1945 || newYear > 2021){
+        alertYear()
+        return
+    } else {
+        //console.log(woman.checked)
+    }
 
     var roundedDay = Math.floor(bornDay)
 

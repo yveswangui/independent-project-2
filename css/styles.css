@@ -17,7 +17,6 @@ body {
     box-shadow: 0,5px,8px rgba(red, green, blue, alpha);
 }
 .header {
-    background-color: white;
     margin-top: 40px;
     margin-right: 70px;
     margin-bottom: 30px;
@@ -26,10 +25,10 @@ body {
     padding: 0px,20px,20px,20px;
 }
 .form {
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 .form-control {
     margin-bottom: 20px;
@@ -58,5 +57,10 @@ body {
 }
 h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(185, 164, 45);
+    background-color: rgb(173, 154, 46);
+    border-radius: 8px;
+}
+.description {
+    text-align: center;
+    color: white;
 }
