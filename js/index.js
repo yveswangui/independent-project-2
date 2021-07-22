@@ -4,6 +4,11 @@ var form = document.getElementById("form")
 maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
 femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
 
+let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
+let message = 'Your Akan name is '
+
+
 form.addEventListener("submit", function (e) {
     var DD = document.getElementById("date").value
     var MM = document.getElementById("month").value
@@ -49,7 +54,7 @@ form.addEventListener("submit", function (e) {
         var bornDay = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7
         var key = parseInt(bornDay)
         console.log(maleNames[key])
-        document.getElementById("output").innerHTML = maleNames[key]
+        document.getElementById("output").innerHTML = message.concat(maleNames[key])
     }
 })
 form.addEventListener("submit", function (e) {
@@ -96,7 +101,7 @@ form.addEventListener("submit", function (e) {
         var bornDay = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7
         var key = parseInt(bornDay)
         console.log(femaleNames[key])
-        document.getElementById("output").innerHTML = femaleNames[key]
+        document.getElementById("output").innerHTML = message.concat(femaleNames[key])
 
     }
     function alertDate() {
